@@ -32,34 +32,39 @@
                   <label for="" class="card-calc-lable"
                     >Water consumption 'Q' (m³/sec.)</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input required id="wc" type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Bottom width 'b' (m)</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input required id="bw" type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Channel slope coefficient 'i'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input
+                    required
+                    id="csc"
+                    type="text"
+                    class="card-calc-input"
+                  />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Slope coefficient 'm'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input required id="sc" type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units__last">
                   <label for="" class="card-calc-lable"
                     >Roughness coefficient 'n'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input required id="rc" type="text" class="card-calc-input" />
                 </div>
               </div>
-              <a href="" class="calc-button"> Calculate... </a>
+              <button class="calc-button">Calculate...</button>
             </div>
             <div class="info-calc">
               <h2 class="h2">Output:</h2>
@@ -68,35 +73,40 @@
                   <label for="" class="card-calc-lable"
                     >Cross-sectional area '𝜔'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input
+                    readonly
+                    id="csa"
+                    type="text"
+                    class="card-calc-input"
+                  />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Wetted perimeter '𝜒'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input readonly id="wp" type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Hydraulic radius '𝑅'
                   </label>
-                  <input type="text" class="card-calc-input" />
+                  <input readonly id="hr" type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Chezy coefficient 'C'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input readonly id="cc" type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable">Q calculated</label>
-                  <input type="text" class="card-calc-input" />
+                  <input readonly id="qc" type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units__last">
                   <label for="" class="card-calc-lable"
                     >Filling depth 'h'
                   </label>
-                  <input type="text" class="card-calc-input" />
+                  <input readonly id="fd" type="text" class="card-calc-input" />
                 </div>
               </div>
             </div>
@@ -113,5 +123,6 @@
         </section>
       </div>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
