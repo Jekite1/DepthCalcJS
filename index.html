@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="head">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>DepthCalcJS</title>
+  </head>
+  <body class="body">
+    <nav class="nav">
+      <div class="nav-language"></div>
+      <div class="nav-title">
+        <img src="./images/DepthCalculation.svg" alt="" class="nav-img" />
+        <h1 class="nav-heading">Depth Calculation JS</h1>
+      </div>
+      <div class="nav-language">
+        <a href="./ru.html" class="nav-language-button">
+          <span class="nav-language-button-title">RU</span>
+          <img src="./images/ru.svg" alt="" class="flag" />
+        </a>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="sections">
+        <section class="section">
+          <div class="calculations">
+            <div class="info-calc">
+              <h2 class="h2">Input:</h2>
+              <div class="card-calc">
+                <div class="card-calc-units">
+                  <label for="" class="card-calc-lable"
+                    >Water consumption 'Q' (m³/sec.)</label
+                  >
+                  <input type="text" class="card-calc-input" />
+                </div>
+                <div class="card-calc-units">
+                  <label for="" class="card-calc-lable"
+                    >Bottom width 'b' (m)</label
+                  >
+                  <input type="text" class="card-calc-input" />
+                </div>
+                <div class="card-calc-units">
+                  <label for="" class="card-calc-lable"
+                    >Channel slope coefficient 'i'</label
+                  >
+                  <input type="text" class="card-calc-input" />
+                </div>
+                <div class="card-calc-units">
+                  <label for="" class="card-calc-lable"
+                    >Slope coefficient 'm'</label
+                  >
+                  <input type="text" class="card-calc-input" />
+                </div>
+                <div class="card-calc-units__last">
+                  <label for="" class="card-calc-lable"
+                    >Roughness coefficient 'n'</label
+                  >
+                  <input type="text" class="card-calc-input" />
+                </div>
+              </div>
+              <a href="" class="calc-button"> Calculate... </a>
+            </div>
+            <div class="info-calc">
+              <h2 class="h2">Output:</h2>
+              <div class="card-calc">
+                <div class="card-calc-units">
+                  <label for="" class="card-calc-lable"
+                    >Cross-sectional area '𝜔'</label
+                  >
+                  <input type="text" class="card-calc-input" />
+                </div>
+                <div class="card-calc-units">
+                  <label for="" class="card-calc-lable"
+                    >Wetted perimeter '𝜒'</label
+                  >
+                  <input type="text" class="card-calc-input" />
+                </div>
+                <div class="card-calc-units">
+                  <label for="" class="card-calc-lable"
+                    >Hydraulic radius '𝑅'
+                  </label>
+                  <input type="text" class="card-calc-input" />
+                </div>
+                <div class="card-calc-units">
+                  <label for="" class="card-calc-lable"
+                    >Chezy coefficient 'C'</label
+                  >
+                  <input type="text" class="card-calc-input" />
+                </div>
+                <div class="card-calc-units">
+                  <label for="" class="card-calc-lable">Q calculated</label>
+                  <input type="text" class="card-calc-input" />
+                </div>
+                <div class="card-calc-units__last">
+                  <label for="" class="card-calc-lable"
+                    >Filling depth 'h'
+                  </label>
+                  <input type="text" class="card-calc-input" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="example">
+            <h2 class="h2">Example:</h2>
+            <div class="card-example">
+              <img class="example-img" src="./images/ex1.svg" alt="" />
+              <img src="./images/ex2.svg" alt="" class="example-img" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
