@@ -1,10 +1,10 @@
-# DepthCalculation
+# DepthCalculationJS
 
 ![alt text](https://github.com/Jekite1/DepthCalculation/blob/master/DepthCalculation.svg?raw=true)
 
 # 🇺🇸 Eng:
 
-A C++ console application that calculates the **water filling depth (`h`)** of a trapezoidal channel using geometric parameters.
+A JavaScript web application that calculates the **water filling depth (`h`)** of a trapezoidal channel using geometric parameters.
 
 ## 🛠 Input Parameters
 The program requires the following data for calculation:
@@ -22,16 +22,11 @@ When entering fractional numbers (decimals), you **must use a dot (.)** as a sep
 * **Correct:** `0.025`
 * **Incorrect:** `0,025`
 
-## 🚀 Usage
-1. Run the `exe` file on Windows.
-2. Enter the values as prompted by the console.
-3. Get the calculated depth result.
-
 ---
 
 # 🇷🇺 Rus:
 
-Консольная программа на C++, которая вычисляет **глубину наполнения канала** трапецеидального сечения по его геометрическим параметрам.
+Веб-приложение на JavaScript, которая вычисляет **глубину наполнения канала** трапецеидального сечения по его геометрическим параметрам.
 
 ## 🛠 Входные параметры
 Для работы программы необходимо ввести:
@@ -47,8 +42,3 @@ When entering fractional numbers (decimals), you **must use a dot (.)** as a sep
 При вводе дробных чисел необходимо использовать **точку (.)** в качестве разделителя.
 * **Правильно:** `0.5`
 * **Неправильно:** `0,5` (использование запятой может привести к ошибке ввода).
-
-## 🚀 Инструкция
-1. Запустите `exe` файл программы в Windows.
-2. Последовательно введите запрашиваемые данные.
-3. Программа выведет результат расчета глубины в консоль.
