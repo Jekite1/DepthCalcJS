@@ -32,34 +32,39 @@
                   <label for="" class="card-calc-lable"
                     >Расход воды 'Q' (м³/сек.)</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input id="wc" required type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Ширина по дну 'b' (м)</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input id="bw" required type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Коэффициент уклона канала 'i'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input
+                    id="csc"
+                    required
+                    type="text"
+                    class="card-calc-input"
+                  />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >коэффициент заложения откоса 'm'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input id="sc" required type="text" class="card-calc-input" />
                 </div>
-                <div class="card-calc-units__last">
+                <div class="card-calc-units card-calc-units__last">
                   <label for="" class="card-calc-lable"
                     >Коэффициент шероховатости 'n'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input id="rc" required type="text" class="card-calc-input" />
                 </div>
               </div>
-              <a href="" class="calc-button"> Рассчитать... </a>
+              <button class="calc-button">Рассчитать...</button>
             </div>
             <div class="info-calc">
               <h2 class="h2">Вывод:</h2>
@@ -68,35 +73,40 @@
                   <label for="" class="card-calc-lable"
                     >Площадь поперечного сечения '𝜔'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input
+                    id="csa"
+                    readonly
+                    type="text"
+                    class="card-calc-input"
+                  />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Смоченный периметр '𝜒'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input id="wp" readonly type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Гидравлический радиус '𝑅'
                   </label>
-                  <input type="text" class="card-calc-input" />
+                  <input id="hr" readonly type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable"
                     >Коэффициент Шези 'C'</label
                   >
-                  <input type="text" class="card-calc-input" />
+                  <input id="cc" readonly type="text" class="card-calc-input" />
                 </div>
                 <div class="card-calc-units">
                   <label for="" class="card-calc-lable">Q рассчитаное</label>
-                  <input type="text" class="card-calc-input" />
+                  <input id="qc" readonly type="text" class="card-calc-input" />
                 </div>
-                <div class="card-calc-units__last">
+                <div class="card-calc-units card-calc-units__last">
                   <label for="" class="card-calc-lable"
                     >Глубина наполнения 'h'
                   </label>
-                  <input type="text" class="card-calc-input" />
+                  <input id="fd" readonly type="text" class="card-calc-input" />
                 </div>
               </div>
             </div>
@@ -113,5 +123,6 @@
         </section>
       </div>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>

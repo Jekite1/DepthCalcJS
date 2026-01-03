@@ -59,6 +59,11 @@ Object.entries(formDOM).forEach(([key, control]) => {
 calcButton.addEventListener("click", () => {
   Object.entries(form).forEach(([key, value]) => {
     form[key] = +value;
+    if (isNaN(form[key])) {
+      alert("Is not a number!!!");
+      Object.entries(form).forEach(([key, value]) => (form[key] = 0));
+      return;
+    }
   });
   Object.entries(output).forEach(([key, value]) => {
     output[key] = 0;

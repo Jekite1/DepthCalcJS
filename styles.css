@@ -109,7 +109,7 @@
   background-color: #181a1c;
   border: 1px solid rgba(255, 255, 255, 0.17);
   border-radius: 10px;
-  height: fit-content;
+  height: auto;
   width: max-content;
 }
 @media screen and (max-width: 1024px) {
@@ -125,25 +125,23 @@
   align-items: center;
   gap: 16px;
   width: 100%;
-
+  height: fit-content;
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.17);
   padding: 20px;
 }
+@media screen and (max-width: 300px) {
+  .card-calc-units {
+    flex-direction: column;
+  }
+}
 .card-calc-units__last {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-  width: 100%;
-
-  justify-content: space-between;
-  padding: 20px;
+  border: none;
 }
 
 .card-calc-lable {
   color: white;
-  height: 24px;
+  height: fit-content;
 }
 
 @media screen and (max-width: 600px) {
