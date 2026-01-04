@@ -41,6 +41,11 @@
 .nav-img {
   height: 64px;
 }
+@media screen and (max-width: 600px) {
+  .nav-img {
+    height: 48px;
+  }
+}
 .nav-heading {
   font-size: 24px;
   color: white;
@@ -87,8 +92,9 @@
 .info-calc {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 100%;
   gap: 10px;
+  height: 100%;
 }
 @media screen and (max-width: 1024px) {
   .info-calc {
@@ -114,8 +120,8 @@
   background-color: #181a1c;
   border: 1px solid rgba(255, 255, 255, 0.17);
   border-radius: 10px;
-  height: auto;
-  width: max-content;
+  height: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 1024px) {
   .card-calc {
@@ -130,7 +136,7 @@
   align-items: center;
   gap: 16px;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.17);
   padding: 20px;
@@ -218,4 +224,45 @@
   .calc-button {
     font-size: 12px;
   }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  background-color: #181a1c;
+  border-top: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 10px 10px 0px 0px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 300px) {
+  .footer-links {
+    flex-direction: column;
+  }
+}
+.footer-link {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+}
+.footer-link-title {
+  color: #408fdf;
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer-link-img {
+  width: 32px;
 }
